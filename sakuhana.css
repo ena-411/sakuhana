@@ -1,0 +1,373 @@
+
+
+#container{
+    width:100%;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+.ex{
+    margin:0px;
+    font-family: 'New Tegomin', serif;
+}
+h1{
+    margin:0px;
+}
+p{
+    margin:0px;
+}
+body{
+    font-family: 'Noto Serif JP', serif;
+}
+/*----------
+   ヘッダー
+------------*/
+.logo h1:hover{
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    color:black;
+}
+.logo a:hover{
+    text-decoration:none!important;
+}
+.header{
+    justify-content:space-between;
+    border-bottom:1px solid black;
+    padding:10px 15px;
+}
+.humbarger{
+    display:none;
+}
+.hdr-nav{
+    display:flex;
+    margin:0px;
+}
+.hdr-nav li{
+    margin-right:30px;
+    margin-top:20px;
+}
+.hdr-nav a:hover{
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    text-decoration:none;
+    color:black;
+}
+
+/*.cart{*/
+/*    width:20px;*/
+/*    height:20px;*/
+/*    background: url(sakuhana-asstes/cart.png) no-repeat;*/
+/*    background-size:cover;*/
+/*}*/
+
+
+/*----------
+   トプ画
+------------*/
+.mainview{
+    background-image:url("sakuhana-assets/topv.jpg");
+    background-size:cover;
+    width:100%;
+    height:650px;
+    background-position:center;
+}
+
+/*----------
+   concept
+------------*/
+#concept{
+    display:flex;
+    height:450px;
+    margin:120px 0;
+}
+.c-photo{
+    width:45%;
+    background-size:cover;
+}
+.c-inner{
+    width:55%;
+    padding:60px 15px;
+    background:white;
+    text-align:center;
+}
+.c-inner p{
+    font-size:18px;
+    padding:5px;
+}
+/*----------
+   about
+------------*/
+#about{
+    display:flex;
+    height:450px;
+    margin:120px 0 30px 0;
+}
+.a-inner{
+    width:40%;
+    padding:60px 15px;
+    background:white;
+    text-align:center;
+}
+.a-inner p{
+    font-size:18px;
+    padding:5px;
+}
+.a-photo{
+    width:60%;
+    background-image:url("sakuhana-assets/flw-abt.jpg");
+    background-size:cover;
+}
+
+/*----------
+   shop
+------------*/
+#shop{
+    display:flex;
+    flex-direction:column;
+    padding-bottom:30px;
+}
+.s-inner{
+    text-align:center;
+    margin:0 auto;
+    padding-top:70px;
+}
+.flw-list{
+    display:flex;
+    flex-wrap:wrap;
+    padding:30px;
+}
+.list-item{
+    margin:0 auto;
+    text-align:center;
+}
+.list-item p{
+    text-align:right;
+    padding:0 10px;
+}
+.list-item:hover{
+    /*opacity: 0.6;*/
+    /*transition-duration: 0.3s;*/
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.m-btn{
+    text-align:center;
+}
+.m-btn:hover{
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+/*----------
+   sns
+------------*/
+#sns{
+    height:550px;
+    background-image:url("sakuhana-assets/sns.jpg");
+    background-size:cover;
+    background-position:center;
+}
+.sn-inner{
+    text-align:center;
+    margin:0 auto;
+    padding:70px 30px;
+}
+.buttons{
+    text-align:center;
+    margin:130px 0;
+    
+}
+.buttons a:hover{
+    opacity: 0.6!important;
+    transition-duration: 0.3s!important;
+}
+.s-btn{
+    margin:10px;
+}
+
+
+/*----------
+   footer
+------------*/
+.footer{
+    background:black;
+    text-align:center;
+    padding:50px;
+}
+
+
+/*----------
+   ipad
+------------*/
+@media screen and (max-width: 1025px) {
+    .mainview{
+        width:100%;
+        height:550px;
+        background-image:url("sakuhana-assets/sp-tpview.jpg");
+        background-size:cover;
+    }
+    .sub{
+        font-size:20px!important;
+    }
+    .title{
+        font-size:40px!important;
+    }
+    .c-inner{
+        font-size:18px!important;
+    }
+    .a-inner p{
+    font-size:18px!important;
+    padding:10px;
+    }
+    .a-inner{
+        width:50%!important;
+    }
+    .a-photo{
+        width:50%!important;
+    }
+    
+}
+
+
+/*----------
+   SP用
+------------*/
+@media screen and (max-width: 560px) {
+    p{
+        font-size:15px!important;
+    }
+    h1{
+        font-size:26px!important;
+    }
+    .sub{
+        font-size:20px!important;
+    }
+    .title{
+        font-size:27px!important;
+    }
+    /*----------
+       ヘッダー
+    ------------*/
+    .header{
+        padding:15px 20px;
+    }
+    .hdr-nav{
+        display:none;
+    }
+    .humbarger{
+        display:block;
+        margin:0px;
+        font-size:70%;
+    }
+    /*----------
+       main
+    ------------*/
+    .mainview{
+        width:100%;
+        height:550px;
+        background-image:url("sakuhana-assets/sp-tpview.jpg");
+        background-size:cover;
+    }
+    /*----------
+       concept
+    ------------*/
+    #concept{
+        width:100%;
+        height:500px;
+        background-image:url("sakuhana-assets/flw-cnpt.jpg");
+        background-size:cover;
+        margin:0;
+    }
+    .c-photo{
+        display:none;
+    }
+    .c-inner{
+        width:70%!important;
+        padding:50px 15px;
+        height:80%;
+        margin:auto;
+        opacity: 0.6;
+        transition-duration: 0.3s;
+    }
+    .c-inner p{
+        font-size:18px!important;
+    }
+    /*----------
+       about
+    ------------*/
+    #about{
+        width:100%;
+        height:550px;
+        background-image:url("sakuhana-assets/flw-abt.jpg");
+        background-size:cover;
+        margin:0px;
+    }
+    .a-photo{
+        display:none;
+    }
+    .a-inner{
+        width:70%!important;
+        height:80%;
+        margin:auto;
+        opacity: 0.6;
+        transition-duration: 0.3s;
+        padding:20px;
+    }
+    .a-inner p{
+    font-size:19px!important;
+    padding:5px;
+    }
+    
+    
+    /*----------
+       shop
+    ------------*/
+    .list-item{
+        width:80%!important;
+    }
+    .li-img{
+        width:100%!important;
+        height:auto!important;
+    }
+    
+    .s-btn{
+        width:60%!important;
+        margin:5px;
+    }
+    
+}
+
+/*----------
+   ちっさいスマホ
+------------*/
+@media screen and (max-width: 576px) {
+    .mainview{
+        width:100%;
+        height:550px;
+        background-image:url("sakuhana-assets/sp-topview.jpg");
+        background-size:cover;
+    }
+}
